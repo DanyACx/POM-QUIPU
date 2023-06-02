@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    tools {
+            jdk 'JAVA_HOME'
+        }
+    stages {
+        stage('Which Java?') {
+            steps {
+                 bat 'java -version'
+            }
+        }
+        stage('Compile') {
+                    steps {
+                        bat 'mvn -DskipTests=true clean compile'
+                    }
+        }
+
+        stage('Test') {
+                    steps {
+                        bat 'mvn test'
+                    }
+        }
+    }
+}
