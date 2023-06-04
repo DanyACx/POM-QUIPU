@@ -10,17 +10,16 @@ public class LoginPage extends Base {
         super(driver);
     }
 
-    By tituloLocator = By.cssSelector("#toolLogin-btnInnerEl");  //  By tituloLocator = By.id("toolLogin-btnInnerEl");
+    By tituloLocator = By.cssSelector("img[alt='company-branding']");
 
     By ventanaLoginLocator = By.id("toolLogin-btnInnerEl"); //  By ventanaLoginLocator = By.id("app-image-banner");
 
-    By emailLocator = By.id("textfield-1023-inputEl");
-    By passwordLocator = By.id("textfield-1024-inputEl");
-    By botonLocator = By.id("button-1026-btnIconEl");
+    By emailLocator = By.cssSelector("input[placeholder='Username']");
+    By passwordLocator = By.cssSelector("input[placeholder='Password']");
+    By botonLocator = By.cssSelector("button[type='submit']");
 
-    By ventanaLocator = By.id("toolLogout-btnIconEl");
+    By ventanaLocator = By.cssSelector("img[alt='client brand banner']");
 
-    By verificarTituloLocator = By.id("toolLogin-btnInnerEl");
 
     // para el frame
     By frameLocator = By.xpath("//frame[@src='../byt/default.html']");
@@ -43,8 +42,8 @@ public class LoginPage extends Base {
     }
 
     public void ingresarCredenciales() throws Exception {
-        this.ingresarTexto("MP-DGA", emailLocator); // 07726284
-        this.ingresarTexto("11111", passwordLocator);
+        this.ingresarTexto("Admin", emailLocator); // 07726284
+        this.ingresarTexto("admin123", passwordLocator);
     }
 
     public void hacerClick() throws Exception {

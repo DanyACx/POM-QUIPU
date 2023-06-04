@@ -23,8 +23,7 @@ public class Hook {
 
         driverManager = DriverManagerFactory.getManager(DriverType.FIREFOX);
         driver = driverManager.getDriver();
-        driver.get("http://quipuincidencias.unmsm.edu.pe:8070/Q20/");  // 172.16.156.178:8006/Q20/
-        driver.manage().window().maximize();
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
 
     @AfterMethod

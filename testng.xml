@@ -3,39 +3,9 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Test Case the HR">
         <classes>
-            <class name="testCases.TC1_FiltrosCompletosValidos">
+            <class name="testCases.TC1_Login">
                 <methods>
-                    <include name="FiltrosCompletosValidos"/>
-                </methods>
-            </class>
-            <class name="testCases.TC2_FiltrosCompletos_NhrInvalido">
-                <methods>
-                    <include name="FiltrosCompletos_NhrInvalido"/>
-                </methods>
-            </class>
-            <class name="testCases.TC3_FiltrosCompletos_Estado">
-                <methods>
-                    <include name="FiltrosCompletos_Estad"/>
-                </methods>
-            </class>
-            <class name="testCases.TC4_FiltrosCompletos_NhrValido">
-                <methods>
-                    <include name="FiltrosCompletos_NhrValido"/>
-                </methods>
-            </class>
-            <class name="testCases.TC5_FiltrosCompletos_Fecha">
-                <methods>
-                    <include name="FiltrosCompletos_Fecha"/>
-                </methods>
-            </class>
-            <class name="testCases.TC6_VerMovimientos">
-                <methods>
-                    <include name="VerMovimientos"/>
-                </methods>
-            </class>
-            <class name="testCases.TC7_VerRegistros">
-                <methods>
-                    <include name="VerRegistros"/>
+                    <include name="Login"/>
                 </methods>
             </class>
         </classes>
