@@ -21,7 +21,7 @@ public class Hook {
         System.setProperty("org.apache.commons.logging.simplelog.log.org.apache.commons.httpclient", "OFF");
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
 
-        driverManager = DriverManagerFactory.getManager(DriverType.FIREFOX);
+        driverManager = DriverManagerFactory.getManager(DriverType.CHROME);
         driver = driverManager.getDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
